@@ -1,0 +1,22 @@
+
+
+<table>
+    <tr>
+        <th class="book-id">Id</th>
+        <th class="book-title">Title</th>
+        <th class="book-author">Author</th>
+        <th class="book-genre">Genre</th>
+        <th class="book-year">Year</th>
+    </tr>
+    <?php
+    foreach ($block->getBooksCollection() as $key=>$book){
+        echo '<tr>
+                    <td>'.$book->getId().'</td>
+                    <td>'.$book->getTitle().'</td>
+                    <td>'.$book->getAuthor().'</td>
+                    <td>'.$book->getGenre().'</td>
+                    <td>'.$book->getYear().'</td>
+                  </tr>';
+    }
+    ?>
+</table>

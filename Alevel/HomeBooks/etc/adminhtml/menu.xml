@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add
+               id="Alevel_HomeBooks::book"
+               title="Book"
+               module="Alevel_HomeBooks"
+               sortOrder="49"
+               resource="Alevel_HomeBooks::book"
+        />
+        <add
+                id="Alevel_HomeBooks::config"
+                title="Book"
+                module="Alevel_HomeBooks"
+                sortOrder="10"
+                action="book/index/index"
+                resource="Alevel_HomeBooks::book"
+                parent="Alevel_HomeBooks::book"
+        />
+        <add
+                id="Alevel_HomeBooks::config_configuration"
+                title="Configuration"
+                module="Alevel_HomeBooks"
+                sortOrder="99"
+                action="adminhtml/system_config/edit/section/book"
+                resource="Alevel_HomeBooks::book"
+                parent="Alevel_HomeBooks::book"
+        />
+    </menu>
+</config>
